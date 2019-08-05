@@ -1,4 +1,5 @@
 import React from 'react';
+import List from './List';
 import './App.css';
 
 class App extends React.Component {
@@ -27,6 +28,7 @@ class App extends React.Component {
                         <input value={this.state.item} onChange={this.onChange}/>
                         <button>Click It</button>
                     </form>
+                    <List listOfItems={this.state.listOfItems}/>
                 </header>
             </div>
         );
